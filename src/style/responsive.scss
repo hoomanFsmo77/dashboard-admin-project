@@ -14,6 +14,22 @@
 
 
 @include query(lg) { ////max-width: 960px
+  #container{
+    &.active #sidebar{
+      transform: translateX(0);
+      z-index: 999;
+    }
+    &.inactive #sidebar{
+      transform: translateX(-250px);
+      z-index: 9;
+    }
+  }
+  #sidebar{
+    transform: translateX(-250px);
+    h6{
+      font-size: 1.1rem !important;
+    }
+  }
    #main{
      margin-left: 0!important;
    }

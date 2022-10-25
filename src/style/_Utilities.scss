@@ -1,5 +1,8 @@
 @import "Variables";
 //////////////////////////////////////
+*{
+  font-family: 'Cairo', sans-serif!important;
+}
 body{
   margin: 0;
 }
@@ -9,6 +12,9 @@ li{
 p{
   margin: 0.5rem;
   line-height: 1.8;
+}
+a:hover{
+  color: currentColor!important;
 }
 h1,h2,h3,h4,h5,h6{
   margin: 0;

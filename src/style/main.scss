@@ -5,8 +5,12 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
 //////////////////////////////////////////
 
-
 ///////////////// main section
+#container{
+  &.active #main{
+    margin-left: 0!important;
+  }
+}
 #main{
   margin-left: 250px;
   background:$main;
@@ -18,6 +22,7 @@
 
 
 
+
 ///////////// sidebar
 #sidebar{
   background: white;
@@ -26,4 +31,20 @@
   left: 0;
   top: 0;
   height: 100vh;
+  transition: all 500ms ease-in-out;
+  .sidebar_item{
+    @include transition(all 350ms linear);
+    &:hover{
+      background: #f0f1f5;
+    }
+    i{
+      color: $icon;
+    }
+    &.active{
+      background: $sidebar;
+      a,i{
+        color: #fff!important;
+      }
+    }
+  }
 }

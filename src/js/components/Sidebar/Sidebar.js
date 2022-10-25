@@ -4,6 +4,11 @@ export  default ()=>({
         ['@click'](){
             this.isExpanded=!this.isExpanded
         }
+    },
+    close_trigger:{
+        ['@click'](){
+            this.isExpanded=false
+        }
     }
 
 

@@ -7,14 +7,36 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="welcome to Rocket Cloud website">
     <meta name="keyword" content="HTML,CSS,Js developer">
-<script defer src="main.af7e2bf5e113dbcc15ea.js"></script><link href="css/main.css" rel="stylesheet"></head>
+<script defer src="main.09aeb1da1a54740edb14.js"></script><link href="css/main.css" rel="stylesheet"></head>
 <body >
 
-<section>
-    <aside id="sidebar">
-        sidebar
+<section id="container" x-data="sidebar" :class="isExpanded ? 'active' : 'inactive'">
+    <aside id="sidebar"  class="p-5">
+        <div class="d-flex align-items-center justify-content-between justify-content-lg-center">
+            <h6 class="fw-bold fs-3">
+                Dashboard Admin
+            </h6>
+            <i class="bi bi-x fs-4 pointer d-block d-lg-none" x-bind="close_trigger"></i>
+        </div>
+        <div class="mt-3">
+            <ul class="d-flex flex-column gap-2 m-0 p-0 w-100 ">
+                <li class="py-3 px-3 sidebar_item active rounded-1 pointer">
+                    <a href="index.html" class="sidebar_link">
+                        <i class="bi bi-grid-fill me-2"></i>
+                        Dashboard
+                    </a>
+                </li>
+                <li class="py-3 px-3 sidebar_item  rounded-1 pointer">
+                    <a href="index.html" class="sidebar_link">
+                        <i class="bi bi-shop me-2"></i>
+                        Shop
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
     </aside>
-    <section x-data="sidebar" id="main" :style="isExpanded && {marginLeft:'0'}">
+    <section  id="main" >
         <header >
             <i x-bind="trigger" class="bi bi-justify fs-5 pointer"></i>
 
