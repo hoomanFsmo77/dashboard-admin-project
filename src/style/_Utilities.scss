@@ -1,1 +1,129 @@
 @import "Variables";
+//////////////////////////////////////
+body{
+  margin: 0;
+}
+li{
+  list-style-type: none;
+}
+p{
+  margin: 0.5rem;
+  line-height: 1.8;
+}
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+  line-height: 1.8;
+}
+a{
+  text-decoration: none;
+  color: $dark;
+}
+
+::placeholder{
+  font-size: 1rem;
+}
+//////////////////////////// offsets
+///// margin
+$m:0;$c:0;
+@while($m < 7){
+  .m-#{$c}{
+    margin: $m+rem !important;
+  }
+  .p-#{$c}{
+    padding: $m+rem !important;
+  }
+  .mx-#{$c}{
+    margin-right: $m+rem !important;
+    margin-left: $m+rem !important;
+  }
+  .px-#{$c}{
+    padding-right: $m+rem !important;
+    padding-left: $m+rem !important;
+  }
+  .my-#{$c}{
+    margin-top: $m+rem !important;
+    margin-bottom: $m+rem !important;
+  }
+  .py-#{$c}{
+    padding-top: $m+rem !important;
+    padding-bottom: $m+rem !important;
+  }
+  .mt-#{$c}{
+    margin-top: $m+rem !important;
+  }
+  .pt-#{$c}{
+    padding-top: $m+rem !important;
+  }
+  .mb-#{$c}{
+    margin-bottom: $m+rem !important;
+  }
+  .pb-#{$c}{
+    padding-bottom: $m+rem !important;
+  }
+  .mr-#{$c}{
+    margin-right: $m+rem !important;
+  }
+  .pr-#{$c}{
+    padding-right: $m+rem !important;
+  }
+  .ml-#{$c}{
+    margin-left: $m+rem !important;
+  }
+  .pl-#{$c}{
+    padding-left: $m+rem !important;
+  }
+  $m:$m + 0.25;
+  $c:$c+1;
+}
+////////// line height
+@for $lh from 0 through 10{
+  .lh-#{$lh}{
+    line-height: $lh !important;
+  }
+}
+///////// font size
+$fs:0.5;$of:1;
+@while($fs < 8){
+  .fs-#{$of}{
+    font-size: $fs+rem!important;
+  }
+  $fs:$fs+0.5;
+  $of:$of + 1
+}
+.fs-09{
+  font-size: 0.9rem!important;
+}
+//////// font wight
+$fw:100;$cw:1;
+@while($fw<1000){
+  .fw-#{$cw}{
+    font-weight: $fw!important;
+  }
+  $cw:$cw+1;
+  $fw:$fw + 100
+}
+/////////// gap
+$gp:0.5;$cg:1;
+@while($cg < 10){
+  .gap-#{$cg}{
+    gap: $gp+rem;
+  }
+  $cg:$cg+1;
+  $gp:$gp+0.5
+}
+///////// width
+$wd:0.1;$cf:10;
+@while($wd < 1.1){
+  .w-#{$cf}{
+    width: percentage($wd)  !important;
+  }
+  .h-#{$cf}{
+    height: percentage($wd)!important;
+  }
+  $wd:$wd+0.1;
+  $cf:$cf + 10
+}
+//////////////////// pointer
+.pointer{
+  cursor: pointer;
+}

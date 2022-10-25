@@ -10,7 +10,20 @@
 </head>
 <body >
 
+<section>
+    <aside id="sidebar">
+        sidebar
+    </aside>
+    <section x-data="sidebar" id="main" :style="isExpanded && {marginLeft:'0'}">
+        <header >
+            <i x-bind="trigger" class="bi bi-justify fs-5 pointer"></i>
 
+        </header>
+        <main class="content">
+                content
+        </main>
+    </section>
+</section>
 
 
 </body>

@@ -2,15 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Template</title>
+    <title>Dashboard Admin</title>
     <meta name="viewport" content="width=device-width ,initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="welcome to Rocket Cloud website">
     <meta name="keyword" content="HTML,CSS,Js developer">
-<script defer src="main.8956f33361605ef0245c.js"></script><link href="css/main.css" rel="stylesheet"></head>
+<script defer src="main.af7e2bf5e113dbcc15ea.js"></script><link href="css/main.css" rel="stylesheet"></head>
 <body >
 
+<section>
+    <aside id="sidebar">
+        sidebar
+    </aside>
+    <section x-data="sidebar" id="main" :style="isExpanded && {marginLeft:'0'}">
+        <header >
+            <i x-bind="trigger" class="bi bi-justify fs-5 pointer"></i>
 
+        </header>
+        <main class="content">
+                content
+        </main>
+    </section>
+</section>
 
 
 </body>

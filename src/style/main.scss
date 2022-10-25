@@ -1,2 +1,29 @@
+@import "~bootstrap";
 @import "./Utilities";
 @import "./Variables";
+@import "responsive";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+//////////////////////////////////////////
+
+
+///////////////// main section
+#main{
+  margin-left: 250px;
+  background:$main;
+  height: 100vh;
+  position: relative;
+  z-index: 99;
+  transition: all 500ms ease-in-out;
+}
+
+
+
+///////////// sidebar
+#sidebar{
+  background: white;
+  width: 250px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+}
