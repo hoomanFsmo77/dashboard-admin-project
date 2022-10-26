@@ -20,12 +20,12 @@
       z-index: 999;
     }
     &.inactive #sidebar{
-      transform: translateX(-250px);
+      transform: translateX(-265px);
       z-index: 9;
     }
   }
   #sidebar{
-    transform: translateX(-250px);
+    transform: translateX(-265px);
     h6{
       font-size: 1.1rem !important;
     }

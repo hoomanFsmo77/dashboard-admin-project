@@ -691,6 +691,28 @@ eval("\n\nmodule.exports = ansiHTML\n\n// Reference to https://github.com/sindre
 
 /***/ }),
 
+/***/ "./src/js/components/Dropdown/Dropdown.js":
+/*!************************************************!*\
+  !*** ./src/js/components/Dropdown/Dropdown.js ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (function () {\n  return {\n    open: false,\n    trigger: _defineProperty({}, '@click', function click() {\n      this.open = !this.open;\n    }),\n    appear: _defineProperty({}, 'x-show', function xShow() {\n      return this.open;\n    })\n  };\n});\n\n//# sourceURL=webpack://template/./src/js/components/Dropdown/Dropdown.js?");
+
+/***/ }),
+
+/***/ "./src/js/components/Sidebar/Sidebar.js":
+/*!**********************************************!*\
+  !*** ./src/js/components/Sidebar/Sidebar.js ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (function () {\n  return {\n    isExpanded: false,\n    trigger: _defineProperty({}, '@click', function click() {\n      this.isExpanded = !this.isExpanded;\n    }),\n    close_trigger: _defineProperty({}, '@click', function click() {\n      this.isExpanded = false;\n    })\n  };\n});\n\n//# sourceURL=webpack://template/./src/js/components/Sidebar/Sidebar.js?");
+
+/***/ }),
+
 /***/ "./src/js/main.js":
 /*!************************!*\
   !*** ./src/js/main.js ***!
@@ -698,7 +720,7 @@ eval("\n\nmodule.exports = ansiHTML\n\n// Reference to https://github.com/sindre
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.esm.js\");\n/* harmony import */ var _style_main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../style/main.scss */ \"./src/style/main.scss\");\n/* harmony import */ var alpinejs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! alpinejs */ \"./node_modules/alpinejs/dist/module.esm.js\");\nObject(function webpackMissingModule() { var e = new Error(\"Cannot find module './components/Menu/Menu.js'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\n\n\n\n\n///////////////////////////////////////////\nwindow.Alpine = alpinejs__WEBPACK_IMPORTED_MODULE_2__[\"default\"];\nalpinejs__WEBPACK_IMPORTED_MODULE_2__[\"default\"].data('menu', Object(function webpackMissingModule() { var e = new Error(\"Cannot find module './components/Menu/Menu.js'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }()));\nalpinejs__WEBPACK_IMPORTED_MODULE_2__[\"default\"].start();\n\n//# sourceURL=webpack://template/./src/js/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.esm.js\");\n/* harmony import */ var _style_main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../style/main.scss */ \"./src/style/main.scss\");\n/* harmony import */ var alpinejs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! alpinejs */ \"./node_modules/alpinejs/dist/module.esm.js\");\n/* harmony import */ var _components_Sidebar_Sidebar_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Sidebar/Sidebar.js */ \"./src/js/components/Sidebar/Sidebar.js\");\n/* harmony import */ var _components_Dropdown_Dropdown_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/Dropdown/Dropdown.js */ \"./src/js/components/Dropdown/Dropdown.js\");\n\n\n\n\n\n///////////////////////////////////////////\nwindow.Alpine = alpinejs__WEBPACK_IMPORTED_MODULE_2__[\"default\"];\nalpinejs__WEBPACK_IMPORTED_MODULE_2__[\"default\"].data('sidebar', _components_Sidebar_Sidebar_js__WEBPACK_IMPORTED_MODULE_3__[\"default\"]);\nalpinejs__WEBPACK_IMPORTED_MODULE_2__[\"default\"].data('dropdown', _components_Dropdown_Dropdown_js__WEBPACK_IMPORTED_MODULE_4__[\"default\"]);\nalpinejs__WEBPACK_IMPORTED_MODULE_2__[\"default\"].start();\n\n//# sourceURL=webpack://template/./src/js/main.js?");
 
 /***/ }),
 
@@ -797,7 +819,7 @@ eval("\n\n/* eslint-disable */\n\n/**\n * @param {string[]} pathComponents\n * @
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n    if(true) {\n      // 1666732342055\n      var cssReload = __webpack_require__(/*! ../../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ \"./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  \n\n//# sourceURL=webpack://template/./src/style/main.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n    if(true) {\n      // 1666802643285\n      var cssReload = __webpack_require__(/*! ../../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ \"./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  \n\n//# sourceURL=webpack://template/./src/style/main.scss?");
 
 /***/ }),
 
@@ -1066,7 +1088,7 @@ eval("var logLevel = \"info\";\n\nfunction dummy() {}\n\nfunction shouldLog(leve
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("1acca23392540336eb29")
+/******/ 		__webpack_require__.h = () => ("5e47ca99b527a1ed07f9")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */

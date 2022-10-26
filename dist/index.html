@@ -7,11 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="welcome to Rocket Cloud website">
     <meta name="keyword" content="HTML,CSS,Js developer">
-<script defer src="main.09aeb1da1a54740edb14.js"></script><link href="css/main.css" rel="stylesheet"></head>
+<script defer src="main.5f503125fb3f5288ed13.js"></script><link href="css/main.css" rel="stylesheet"></head>
 <body >
 
 <section id="container" x-data="sidebar" :class="isExpanded ? 'active' : 'inactive'">
-    <aside id="sidebar"  class="p-5">
+    <aside id="sidebar"  class="p-5 scroller">
         <div class="d-flex align-items-center justify-content-between justify-content-lg-center">
             <h6 class="fw-bold fs-3">
                 Dashboard Admin
@@ -26,11 +26,87 @@
                         Dashboard
                     </a>
                 </li>
-                <li class="py-3 px-3 sidebar_item  rounded-1 pointer">
-                    <a href="index.html" class="sidebar_link">
-                        <i class="bi bi-shop me-2"></i>
-                        Shop
+                <li x-data="dropdown" class="sidebar_item pointer position-relative">
+                    <a x-bind="trigger" href="#" class="sidebar_link d-flex justify-content-between align-items-center p-3 rounded-2 sidebar-link-hover">
+                        <span>
+                            <i class="bi bi-shop me-2"></i>
+                            Shop
+                        </span>
+                        <i class="bi bi-chevron-down fs-08"></i>
                     </a>
+                    <ul x-bind="appear" :style="appear && {position:'static'}" x-transition class="m-0 ps-3 w-100 my-2  mx-2 flex-column pt-3 gap-2 bg-main rounded-2">
+                        <li class="submenu_item p-1"><a href="#" class=" d-inline-block w-100 fs-09 sidebar-hover"><i class="bi bi-chevron-right me-3 fs-07"></i>Shops list</a></li>
+                        <li class="submenu_item p-1"><a href="#" class=" d-inline-block w-100 fs-09 sidebar-hover"><i class="bi bi-chevron-right me-3 fs-07"></i>Create shop</a></li>
+                        <li class="submenu_item p-1"><a href="#" class=" d-inline-block w-100 fs-09 sidebar-hover"><i class="bi bi-chevron-right me-3 fs-07"></i>Edit shop</a></li>
+                    </ul>
+                </li>
+                <li x-data="dropdown" class="sidebar_item pointer position-relative">
+                    <a x-bind="trigger" href="#" class="sidebar_link d-flex justify-content-between align-items-center p-3 rounded-2 sidebar-link-hover">
+                        <span>
+                            <i class="bi bi-box-seam me-2"></i>
+                            Products
+                        </span>
+                        <i class="bi bi-chevron-down fs-08"></i>
+                    </a>
+                    <ul x-bind="appear" :style="appear && {position:'static'}" x-transition class="m-0 ps-3 w-100 my-2  mx-2 flex-column pt-3 gap-2 bg-main rounded-2">
+                        <li class="submenu_item p-1 "><a href="#" class=" d-inline-block w-100 fs-09 sidebar-hover"><i class="bi bi-chevron-right me-3 fs-07"></i>Products list</a></li>
+                        <li class="submenu_item p-1 "><a href="#" class=" d-inline-block w-100 fs-09 sidebar-hover"><i class="bi bi-chevron-right me-3 fs-07"></i>Create product</a></li>
+                        <li class="submenu_item p-1 "><a href="#" class=" d-inline-block w-100 fs-09 sidebar-hover"><i class="bi bi-chevron-right me-3 fs-07"></i>Edit product</a></li>
+                    </ul>
+                </li>
+                <li x-data="dropdown" class="sidebar_item pointer position-relative">
+                    <a x-bind="trigger" href="#" class="sidebar_link d-flex justify-content-between align-items-center p-3 rounded-2 sidebar-link-hover">
+                        <span>
+                            <i class="bi bi-basket-fill me-2"></i>
+                            Orders
+                        </span>
+                        <i class="bi bi-chevron-down fs-08"></i>
+                    </a>
+                    <ul x-bind="appear" :style="appear && {position:'static'}" x-transition class="m-0 ps-3 w-100 my-2  mx-2 flex-column pt-3 gap-2 bg-main rounded-2">
+                        <li class="submenu_item p-1 "><a href="#" class=" d-inline-block w-100 fs-09 sidebar-hover"><i class="bi bi-chevron-right me-3 fs-07"></i>Orders list</a></li>
+                        <li class="submenu_item p-1 "><a href="#" class=" d-inline-block w-100 fs-09 sidebar-hover"><i class="bi bi-chevron-right me-3 fs-07"></i>Create order</a></li>
+                        <li class="submenu_item p-1 "><a href="#" class=" d-inline-block w-100 fs-09 sidebar-hover"><i class="bi bi-chevron-right me-3 fs-07"></i>Edit order</a></li>
+                    </ul>
+                </li>
+                <li class="py-3 px-3 sidebar_item sidebar-link-hover rounded-1 pointer">
+                    <a href="index.html" class="sidebar_link ">
+                        <i class=" bi bi-percent me-2"></i>
+                        Discount
+                    </a>
+                </li>
+                <li class="py-3 px-3 sidebar_item sidebar-link-hover rounded-1 pointer">
+                    <a href="index.html" class="sidebar_link ">
+                        <i class="bi bi-chat-right-dots-fill me-2"></i>
+                        Tickets
+                    </a>
+                </li>
+                <li x-data="dropdown" class="sidebar_item pointer position-relative">
+                    <a x-bind="trigger" href="#" class="sidebar_link d-flex justify-content-between align-items-center p-3 rounded-2 sidebar-link-hover">
+                        <span>
+                            <i class="bi bi-people-fill me-2"></i>
+                            Users
+                        </span>
+                        <i class="bi bi-chevron-down fs-08"></i>
+                    </a>
+                    <ul x-bind="appear" :style="appear && {position:'static'}" x-transition class="m-0 ps-3 w-100 my-2  mx-2 flex-column pt-3 gap-2 bg-main rounded-2">
+                        <li class="submenu_item p-1 "><a href="#" class=" d-inline-block w-100 fs-09 sidebar-hover"><i class="bi bi-chevron-right me-3 fs-07"></i>Users list</a></li>
+                        <li class="submenu_item p-1 "><a href="#" class=" d-inline-block w-100 fs-09 sidebar-hover"><i class="bi bi-chevron-right me-3 fs-07"></i>Create user</a></li>
+                        <li class="submenu_item p-1 "><a href="#" class=" d-inline-block w-100 fs-09 sidebar-hover"><i class="bi bi-chevron-right me-3 fs-07"></i>Edit user</a></li>
+                    </ul>
+                </li>
+                <li x-data="dropdown" class="sidebar_item pointer position-relative">
+                    <a x-bind="trigger" href="#" class="sidebar_link d-flex justify-content-between align-items-center p-3 rounded-2 sidebar-link-hover">
+                        <span>
+                            <i class="bi bi-chat-dots-fill me-2"></i>
+                            Comments
+                        </span>
+                        <i class="bi bi-chevron-down fs-08"></i>
+                    </a>
+                    <ul x-bind="appear" :style="appear && {position:'static'}" x-transition class="m-0 ps-3 w-100 my-2  mx-2 flex-column pt-3 gap-2 bg-main rounded-2">
+                        <li class="submenu_item p-1 "><a href="#" class=" d-inline-block w-100 fs-09 sidebar-hover"><i class="bi bi-chevron-right me-3 fs-07"></i>Comments list</a></li>
+                        <li class="submenu_item p-1 "><a href="#" class=" d-inline-block w-100 fs-09 sidebar-hover"><i class="bi bi-chevron-right me-3 fs-07"></i>Create comment</a></li>
+                        <li class="submenu_item p-1 "><a href="#" class=" d-inline-block w-100 fs-09 sidebar-hover"><i class="bi bi-chevron-right me-3 fs-07"></i>Edit comment</a></li>
+                    </ul>
                 </li>
             </ul>
         </div>
