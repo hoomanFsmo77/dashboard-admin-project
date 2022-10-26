@@ -698,7 +698,7 @@ eval("\n\nmodule.exports = ansiHTML\n\n// Reference to https://github.com/sindre
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (function () {\n  return {\n    open: false,\n    trigger: _defineProperty({}, '@click', function click() {\n      this.open = !this.open;\n    }),\n    appear: _defineProperty({}, 'x-show', function xShow() {\n      return this.open;\n    })\n  };\n});\n\n//# sourceURL=webpack://template/./src/js/components/Dropdown/Dropdown.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (function () {\n  var _trigger;\n  return {\n    open: false,\n    trigger: (_trigger = {}, _defineProperty(_trigger, '@click', function click() {\n      this.open = !this.open;\n    }), _defineProperty(_trigger, '@click.outside', function clickOutside() {\n      this.open = false;\n    }), _trigger),\n    appear: _defineProperty({}, 'x-show', function xShow() {\n      return this.open;\n    }),\n    close: _defineProperty({}, '@click', function click() {\n      this.open = false;\n    })\n  };\n});\n\n//# sourceURL=webpack://template/./src/js/components/Dropdown/Dropdown.js?");
 
 /***/ }),
 
@@ -720,7 +720,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.esm.js\");\n/* harmony import */ var _style_main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../style/main.scss */ \"./src/style/main.scss\");\n/* harmony import */ var alpinejs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! alpinejs */ \"./node_modules/alpinejs/dist/module.esm.js\");\n/* harmony import */ var _components_Sidebar_Sidebar_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Sidebar/Sidebar.js */ \"./src/js/components/Sidebar/Sidebar.js\");\n/* harmony import */ var _components_Dropdown_Dropdown_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/Dropdown/Dropdown.js */ \"./src/js/components/Dropdown/Dropdown.js\");\n\n\n\n\n\n///////////////////////////////////////////\nwindow.Alpine = alpinejs__WEBPACK_IMPORTED_MODULE_2__[\"default\"];\nalpinejs__WEBPACK_IMPORTED_MODULE_2__[\"default\"].data('sidebar', _components_Sidebar_Sidebar_js__WEBPACK_IMPORTED_MODULE_3__[\"default\"]);\nalpinejs__WEBPACK_IMPORTED_MODULE_2__[\"default\"].data('dropdown', _components_Dropdown_Dropdown_js__WEBPACK_IMPORTED_MODULE_4__[\"default\"]);\nalpinejs__WEBPACK_IMPORTED_MODULE_2__[\"default\"].start();\n\n//# sourceURL=webpack://template/./src/js/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.esm.js\");\n/* harmony import */ var _style_main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../style/main.scss */ \"./src/style/main.scss\");\n/* harmony import */ var _images_user_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../images/user.jpg */ \"./src/images/user.jpg\");\n/* harmony import */ var alpinejs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! alpinejs */ \"./node_modules/alpinejs/dist/module.esm.js\");\n/* harmony import */ var _components_Sidebar_Sidebar_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/Sidebar/Sidebar.js */ \"./src/js/components/Sidebar/Sidebar.js\");\n/* harmony import */ var _components_Dropdown_Dropdown_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/Dropdown/Dropdown.js */ \"./src/js/components/Dropdown/Dropdown.js\");\n\n\n\n\n\n\n///////////////////////////////////////////\nwindow.Alpine = alpinejs__WEBPACK_IMPORTED_MODULE_3__[\"default\"];\nalpinejs__WEBPACK_IMPORTED_MODULE_3__[\"default\"].data('sidebar', _components_Sidebar_Sidebar_js__WEBPACK_IMPORTED_MODULE_4__[\"default\"]);\nalpinejs__WEBPACK_IMPORTED_MODULE_3__[\"default\"].data('dropdown', _components_Dropdown_Dropdown_js__WEBPACK_IMPORTED_MODULE_5__[\"default\"]);\nalpinejs__WEBPACK_IMPORTED_MODULE_3__[\"default\"].start();\n\n//# sourceURL=webpack://template/./src/js/main.js?");
 
 /***/ }),
 
@@ -819,7 +819,7 @@ eval("\n\n/* eslint-disable */\n\n/**\n * @param {string[]} pathComponents\n * @
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n    if(true) {\n      // 1666802643285\n      var cssReload = __webpack_require__(/*! ../../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ \"./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  \n\n//# sourceURL=webpack://template/./src/style/main.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n    if(true) {\n      // 1666809799116\n      var cssReload = __webpack_require__(/*! ../../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ \"./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  \n\n//# sourceURL=webpack://template/./src/style/main.scss?");
 
 /***/ }),
 
@@ -992,6 +992,17 @@ eval("/*\n\tMIT License http://www.opensource.org/licenses/mit-license.php\n\tAu
 
 eval("var logLevel = \"info\";\n\nfunction dummy() {}\n\nfunction shouldLog(level) {\n\tvar shouldLog =\n\t\t(logLevel === \"info\" && level === \"info\") ||\n\t\t([\"info\", \"warning\"].indexOf(logLevel) >= 0 && level === \"warning\") ||\n\t\t([\"info\", \"warning\", \"error\"].indexOf(logLevel) >= 0 && level === \"error\");\n\treturn shouldLog;\n}\n\nfunction logGroup(logFn) {\n\treturn function (level, msg) {\n\t\tif (shouldLog(level)) {\n\t\t\tlogFn(msg);\n\t\t}\n\t};\n}\n\nmodule.exports = function (level, msg) {\n\tif (shouldLog(level)) {\n\t\tif (level === \"info\") {\n\t\t\tconsole.log(msg);\n\t\t} else if (level === \"warning\") {\n\t\t\tconsole.warn(msg);\n\t\t} else if (level === \"error\") {\n\t\t\tconsole.error(msg);\n\t\t}\n\t}\n};\n\n/* eslint-disable node/no-unsupported-features/node-builtins */\nvar group = console.group || dummy;\nvar groupCollapsed = console.groupCollapsed || dummy;\nvar groupEnd = console.groupEnd || dummy;\n/* eslint-enable node/no-unsupported-features/node-builtins */\n\nmodule.exports.group = logGroup(group);\n\nmodule.exports.groupCollapsed = logGroup(groupCollapsed);\n\nmodule.exports.groupEnd = logGroup(groupEnd);\n\nmodule.exports.setLogLevel = function (level) {\n\tlogLevel = level;\n};\n\nmodule.exports.formatError = function (err) {\n\tvar message = err.message;\n\tvar stack = err.stack;\n\tif (!stack) {\n\t\treturn message;\n\t} else if (stack.indexOf(message) < 0) {\n\t\treturn message + \"\\n\" + stack;\n\t} else {\n\t\treturn stack;\n\t}\n};\n\n\n//# sourceURL=webpack://template/./node_modules/webpack/hot/log.js?");
 
+/***/ }),
+
+/***/ "./src/images/user.jpg":
+/*!*****************************!*\
+  !*** ./src/images/user.jpg ***!
+  \*****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"images/user.jpg\";\n\n//# sourceURL=webpack://template/./src/images/user.jpg?");
+
 /***/ })
 
 /******/ 	});
@@ -1088,7 +1099,7 @@ eval("var logLevel = \"info\";\n\nfunction dummy() {}\n\nfunction shouldLog(leve
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("5e47ca99b527a1ed07f9")
+/******/ 		__webpack_require__.h = () => ("28c957816ffac1a8ab9d")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */

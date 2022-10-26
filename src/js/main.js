@@ -1,5 +1,6 @@
 import 'bootstrap';
 import '../style/main.scss';
+import '../images/user.jpg'
 import Alpine from 'alpinejs';
 import Sidebar from "./components/Sidebar/Sidebar.js";
 import Dropdown from "./components/Dropdown/Dropdown.js";

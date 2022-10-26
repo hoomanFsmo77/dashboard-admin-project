@@ -148,6 +148,18 @@ $wd:0.1;$cf:10;
   background: $main;
 }
 
+.bg-sidebar{
+  background: $sidebar!important;
+}
+///////////////////////////// text
+.text-icon{
+  color: $icon!important;
+}
+.text-gray{
+  color: $gray!important;
+}
+////////////////////////////
+
 .sidebar-hover {
   @include transition(all 250ms);
 
@@ -161,4 +173,18 @@ $wd:0.1;$cf:10;
     background: #f0f1f5!important;
   }
 
+}
+///////////////////////////
+.announcer{
+  position: absolute;
+  @include border-radius(50%);
+  @include transform(translate(-47px, -6px));
+  padding: 3px 9px;
+}
+
+.divider{
+  width: 100%;
+  margin: 10px 0;
+  height: 2px;
+  background: #cccccc;
 }
