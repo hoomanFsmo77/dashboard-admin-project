@@ -50,7 +50,10 @@
     width: 160px!important;
   }
 }
-
+.card{
+  border:none!important;
+  @include border-radius(8px);
+}
 
 
 
@@ -78,7 +81,7 @@
       color: $icon;
     }
     &.active{
-      background: $sidebar;
+      background: $second;
       a,i{
         color: #fff!important;
       }

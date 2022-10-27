@@ -12777,6 +12777,18 @@ a {
   background: #435ebe !important;
 }
 
+.bg-primer {
+  background: #57caeb;
+}
+
+.bg-primer-light {
+  background: #5ddab4;
+}
+
+.bg-dang {
+  background: #ff7976;
+}
+
 .text-icon {
   color: #7c8db5 !important;
 }
@@ -12822,6 +12834,15 @@ a {
   margin: 10px 0;
   height: 2px;
   background: #cccccc;
+}
+
+.icon-cover {
+  padding: 11px;
+  border-radius: 7px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 960px) {
@@ -12892,6 +12913,13 @@ a {
 #main .notification.user-info ul {
   right: 8% !important;
   width: 160px !important;
+}
+
+.card {
+  border: none !important;
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
 }
 
 #sidebar {

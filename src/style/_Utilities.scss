@@ -149,8 +149,18 @@ $wd:0.1;$cf:10;
 }
 
 .bg-sidebar{
-  background: $sidebar!important;
+  background: $second!important;
 }
+.bg-primer{
+  background: $primer;
+}
+.bg-primer-light{
+  background: $primer-light;
+}
+.bg-dang{
+  background: $dang;
+}
+
 ///////////////////////////// text
 .text-icon{
   color: $icon!important;
@@ -164,7 +174,7 @@ $wd:0.1;$cf:10;
   @include transition(all 250ms);
 
   &:hover {
-    color: $sidebar!important;
+    color: $second!important;
   }
 }
 .sidebar-link-hover{
@@ -187,4 +197,14 @@ $wd:0.1;$cf:10;
   margin: 10px 0;
   height: 2px;
   background: #cccccc;
+}
+////////////////////////////
+%icon_cover{
+  padding:11px;
+  @include border-radius(7px);
+  display: flex;
+  align-items: center;
+}
+.icon-cover{
+  @extend %icon_cover;
 }
