@@ -12892,7 +12892,7 @@ a {
 #main {
   margin-left: 265px;
   background: #f2f7ff;
-  height: 100vh;
+  height: auto;
   position: relative;
   z-index: 99;
   transition: all 500ms ease-in-out;
@@ -12902,6 +12902,7 @@ a {
   -webkit-transition: all 500ms ease-in-out;
 }
 #main .notification ul {
+  z-index: 99999;
   width: 180px;
   background: white;
   right: -85%;
@@ -12920,6 +12921,15 @@ a {
   border-radius: 8px;
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
+}
+.card .card-header {
+  padding: 1rem !important;
+  background: #fff !important;
+  border-bottom: none !important;
+}
+
+#chartdiv {
+  height: 500px;
 }
 
 #sidebar {
