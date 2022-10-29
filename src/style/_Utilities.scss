@@ -208,3 +208,13 @@ $wd:0.1;$cf:10;
 .icon-cover{
   @extend %icon_cover;
 }
+
+.btn-second-light{
+  background: #ebf3ff;
+  color:$second;
+  @include transition(all 250ms);
+  &:hover{
+    background: $second;
+    color:#ebf3ff ;
+  }
+}

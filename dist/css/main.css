@@ -12845,6 +12845,20 @@ a {
   align-items: center;
 }
 
+.btn-second-light {
+  background: #ebf3ff;
+  color: #435ebe;
+  transition: all 250ms;
+  -moz-transition: all 250ms;
+  -ms-transition: all 250ms;
+  -o-transition: all 250ms;
+  -webkit-transition: all 250ms;
+}
+.btn-second-light:hover {
+  background: #435ebe;
+  color: #ebf3ff;
+}
+
 @media (max-width: 960px) {
   #container.active #sidebar {
     transform: translateX(0);
@@ -12864,6 +12878,10 @@ a {
     margin-left: 0 !important;
   }
 }
+[x-cloak] {
+  display: none !important;
+}
+
 .scroller {
   scrollbar-color: #aaa #f1f1f1;
   scrollbar-width: thin;
