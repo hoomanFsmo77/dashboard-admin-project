@@ -12878,6 +12878,11 @@ a {
     margin-left: 0 !important;
   }
 }
+@media (max-width: 500px) {
+  .user_info * {
+    font-size: 0.8rem !important;
+  }
+}
 [x-cloak] {
   display: none !important;
 }

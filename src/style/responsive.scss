@@ -51,6 +51,8 @@
 
 
 @include query(sm) { ////max-width: 500px
-
+  .user_info *{
+    font-size: 0.8rem!important;
+  }
 
 }
