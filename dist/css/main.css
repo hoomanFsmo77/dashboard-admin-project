@@ -12996,3 +12996,7 @@ a {
   transform: translateX(7px);
   -ms-transform: translateX(7px);
 }
+
+#pie_chart {
+  height: 300px;
+}
