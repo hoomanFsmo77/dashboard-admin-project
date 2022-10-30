@@ -50,8 +50,12 @@ module.exports={
         }),
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
-            template: "index.html"
-            // publicPath:"./dist/"
+            template: "index.html",
+            filename: "index.html"
+        }),
+        new HtmlWebpackPlugin({
+            template: "product.html",
+            filename: "product.html"
         })
     ]
 }
