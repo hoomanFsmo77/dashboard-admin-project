@@ -91,9 +91,12 @@
     i{
       color: $icon;
     }
-    &.active{
+    &.active , a.active{
       background: $second;
-      a,i{
+      &:hover{
+        background: $second!important;
+      }
+      a,i , *{
         color: #fff!important;
       }
     }

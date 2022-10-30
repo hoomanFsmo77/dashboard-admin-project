@@ -45,7 +45,12 @@ module.exports={
         }),
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
-            template: "index.html"
+            template: "index.html",
+            filename: "index.html"
+        }),
+        new HtmlWebpackPlugin({
+            template: "product.html",
+            filename: "product.html"
         })
     ],
     devServer: {

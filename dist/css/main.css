@@ -12797,6 +12797,10 @@ a {
   color: #6c757d !important;
 }
 
+.text-second {
+  color: #435ebe !important;
+}
+
 .sidebar-hover {
   transition: all 250ms;
   -moz-transition: all 250ms;
@@ -12979,10 +12983,13 @@ a {
 #sidebar .sidebar_item i {
   color: #7c8db5;
 }
-#sidebar .sidebar_item.active {
+#sidebar .sidebar_item.active, #sidebar .sidebar_item a.active {
   background: #435ebe;
 }
-#sidebar .sidebar_item.active a, #sidebar .sidebar_item.active i {
+#sidebar .sidebar_item.active:hover, #sidebar .sidebar_item a.active:hover {
+  background: #435ebe !important;
+}
+#sidebar .sidebar_item.active a, #sidebar .sidebar_item.active i, #sidebar .sidebar_item.active *, #sidebar .sidebar_item a.active a, #sidebar .sidebar_item a.active i, #sidebar .sidebar_item a.active * {
   color: #fff !important;
 }
 #sidebar .sidebar_item .submenu_item {
